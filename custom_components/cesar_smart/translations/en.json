@@ -1,0 +1,47 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Cesar Smart",
+        "description": "Choose a sign-in method",
+        "menu_options": {
+          "phone": "Phone and password",
+          "token": "Paste refresh token"
+        }
+      },
+      "keys": {
+        "title": "Application keys",
+        "description": "client_id and client_secret from the official Cesar Smart APK (see tools/extract_keys.py). Not shipped with the integration.",
+        "data": {
+          "client_id": "Client ID",
+          "client_secret": "Client secret"
+        }
+      },
+      "phone": {
+        "title": "Phone sign-in",
+        "description": "Phone number and password from the Cesar Smart app",
+        "data": {
+          "phone": "Phone",
+          "password": "Password"
+        }
+      },
+      "token": {
+        "title": "Refresh token",
+        "description": "Paste refresh_token from the app (used when password sign-in is unavailable)",
+        "data": {
+          "refresh_token": "Refresh token",
+          "device_id": "Device ID (optional)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid login or password",
+      "cannot_connect": "Cannot reach Cesar service",
+      "no_objects": "No vehicles found in this account",
+      "keys_required": "Fill in both client_id and client_secret"
+    },
+    "abort": {
+      "already_configured": "Account is already configured"
+    }
+  }
+}

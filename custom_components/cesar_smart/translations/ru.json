@@ -1,0 +1,47 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Cesar Smart",
+        "description": "Выберите способ входа",
+        "menu_options": {
+          "phone": "По телефону и паролю",
+          "token": "Вставить refresh-токен"
+        }
+      },
+      "keys": {
+        "title": "Ключи приложения",
+        "description": "client_id и client_secret из официального APK Cesar Smart (поможет tools/extract_keys.py). В поставку интеграции не входят.",
+        "data": {
+          "client_id": "Client ID",
+          "client_secret": "Client secret"
+        }
+      },
+      "phone": {
+        "title": "Вход по телефону",
+        "description": "Номер телефона и пароль от приложения Cesar Smart",
+        "data": {
+          "phone": "Телефон",
+          "password": "Пароль"
+        }
+      },
+      "token": {
+        "title": "Refresh-токен",
+        "description": "Вставьте refresh_token из приложения (используется, если вход по паролю недоступен)",
+        "data": {
+          "refresh_token": "Refresh-токен",
+          "device_id": "Device ID (необязательно)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Неверный логин или пароль",
+      "cannot_connect": "Не удалось связаться с сервисом Cesar",
+      "no_objects": "В аккаунте не найдено ни одного автомобиля",
+      "keys_required": "Заполните оба поля: client_id и client_secret"
+    },
+    "abort": {
+      "already_configured": "Аккаунт уже настроен"
+    }
+  }
+}

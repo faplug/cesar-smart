@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+*.log
+
+# локальные токены и данные CLI
+cesar_tokens.json
+cesar_units.json
+
+# локальные ключи приложения (не публиковать)
+custom_components/cesar_smart/const_local.py

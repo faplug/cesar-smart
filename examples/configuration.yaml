@@ -1,0 +1,27 @@
+# Пример настройки Yandex Smart Home для Cesar Smart.
+# entity_id подставьте свои (зависят от имени устройства в HA).
+
+yandex_smart_home:
+  entity_config:
+    switch.jac_js3_u318an250_dvigatel:
+      type: devices.types.remote_car
+      name: Машина
+
+    # ВАЖНО: openable.door_lock УДЯ не принимает — используйте openable.
+    lock.jac_js3_u318an250_tsentralnyi_zamok:
+      type: devices.types.openable
+      name: Замок машины
+
+    cover.jac_js3_u318an250_bagazhnik:
+      type: devices.types.openable
+      name: Багажник
+
+# Фильтр «включать только выбранные» настраивается в интерфейсе интеграции
+# (Yandex Smart Home → Настроить → Фильтр). Список хранится в
+# .storage/core.config_entries → options.filter.include_entities.
+#
+# Минимальный набор для Алисы:
+#   switch.*_dvigatel
+#   switch.*_okhrana
+#   lock.*_tsentralnyi_zamok
+#   cover.*_bagazhnik
