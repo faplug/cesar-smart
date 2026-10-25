@@ -11,6 +11,3 @@ Thumbs.db
 # локальные токены и данные CLI
 cesar_tokens.json
 cesar_units.json
-
-# локальные ключи приложения (не публиковать)
-custom_components/cesar_smart/const_local.py

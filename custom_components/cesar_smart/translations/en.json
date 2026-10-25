@@ -6,7 +6,8 @@
         "description": "Choose a sign-in method",
         "menu_options": {
           "phone": "Phone and password",
-          "token": "Paste refresh token"
+          "token": "Paste refresh token",
+          "keys": "Custom application keys"
         }
       },
       "keys": {

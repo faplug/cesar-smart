@@ -32,7 +32,7 @@ class CesarConfigFlow(ConfigFlow, domain=DOMAIN):
     def _show_menu(self) -> ConfigFlowResult:
         return self.async_show_menu(
             step_id="user",
-            menu_options=["phone", "token"],
+            menu_options=["phone", "token", "keys"],
         )
 
     async def async_step_keys(self, user_input: dict[str, Any] | None = None) -> ConfigFlowResult:
